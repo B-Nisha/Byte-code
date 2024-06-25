@@ -1,0 +1,30 @@
+//76. Write a java program to check if a given number is prime or not using a do-while loop.
+
+
+package op_loops;
+import java.util.Scanner;
+public class prime_without_do_while {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any number:");
+		int n=sc.nextInt();
+		int count=0;
+		for (int i=1;i<=n;i++) 
+		{
+			if (n%i==0)
+			{
+				count++;
+			}
+		}
+		if (count==2) 
+		{
+			System.out.println("it is a prime number");
+			}
+		else 
+		{
+			System.out.println("it is not a prime number");
+		}
+		}
+	}
+	
